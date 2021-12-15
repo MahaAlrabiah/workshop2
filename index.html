@@ -4,15 +4,27 @@
 <meta charset="UTF-8">
 <title>Your front-end</title>
 </head>
-
 <body>
-<center><form action="/fasttext">
-	Enter your text<br>
-	<input type="text" name="statement"> <br> <br>
-	<input type="submit" value="Submit">
-	<input type="reset" value="Clear">
-</form> </center>
+	<center>	
+		<font size="6" face="Avenir">
+			<b>
+	<p>food text classification system &nbsp; <img src="photo.jpg" height="100" width="100"> </p>
+			</b>
+		</center>
+	</font>
+	<center>	
 
+		<form action="/fasttext">
+			<textarea rows="4" cols="50" name="statement"></textarea> 
+			<center>
+			<input type="submit" value="Submit" onclick = "getFastTextResults()">
+			<p id ="labels"></p>
+			
+			<input type="reset" value="Clear">
+
+		</form>
+	</center>
+	<script type="text/javascript" src = "index.js"></script>
 </body>
 
-</html>  
+</html> 
